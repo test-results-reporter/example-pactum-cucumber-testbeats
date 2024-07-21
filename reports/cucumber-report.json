@@ -1,0 +1,58 @@
+[
+  {
+    "description": "  In order to keep Regres api stable\n  As a tester\n  I want to make sure that everything works as expected",
+    "elements": [
+      {
+        "description": "",
+        "id": "regres;create-a-new-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Create a new user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 521791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I create a new user",
+            "match": {
+              "location": "features/support/steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 385459290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I fetch users",
+            "match": {
+              "location": "features/support/steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11984208
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "regres",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Regres",
+    "tags": [],
+    "uri": "features/sample.feature"
+  }
+]
