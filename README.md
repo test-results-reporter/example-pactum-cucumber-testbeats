@@ -17,7 +17,7 @@ npm run test
 ## Reporting Results
 
 ```bash
-npx testbeats@latest publish --slack "<slack-webhook>" --cucumber "reports/cucumber-report.json" -ci-info -chart-test-summary
+npx testbeats@latest publish --slack "<slack-webhook>" --cucumber "reports/cucumber-report.json" --ci-info --chart-test-summary
 ```
 
 - You can find the report at [reports/cucumber-report.json](reports/cucumber-report.json)
