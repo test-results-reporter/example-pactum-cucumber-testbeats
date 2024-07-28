@@ -18,7 +18,7 @@ jobs:
       run: npm ci
     - name: Run Pactum Cucumber tests
       run: npm run test
-    - run: npx testbeats@latest publish --slack ${{ secrets.SLACK_MVP_URL }} --cucumber reports/cucumber-report.json
+    - run: npx testbeats@latest publish --slack ${{ secrets.SLACK_MVP_URL }} --cucumber reports/cucumber-report.json -ci-info -chart-test-summary
       if: always()
       env:
         TEST_BEATS_API_KEY: ${{ secrets.TEST_BEATS_API_KEY }}
