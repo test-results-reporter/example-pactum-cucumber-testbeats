@@ -23,14 +23,14 @@ jobs:
       env:
         TEST_BEATS_API_KEY: ${{ secrets.TEST_BEATS_API_KEY }}
     - name: Save Artifacts - Reports
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: reports
-          path: reports/
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: reports
+        path: reports/
     - name: Save Artifacts - Attachments
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: attachments
-          path: .testbeats/
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: attachments
+        path: .testbeats/
