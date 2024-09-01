@@ -6,6 +6,10 @@ Feature: Regres
 
   Scenario: Create a new user
     Given I create a new user
-    Then I fetch users
+    Then I fetch user by id
+
+  Scenario: Fetch All Users
+    Given I fetch all users
+
 
 

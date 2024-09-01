@@ -19,9 +19,24 @@ Given('I create a new user', async () => {
     });
 });
 
-Given('I fetch users', async () => {
+Given('I fetch user by id', async () => {
   await spec()
     .get('/api/users/2')
+    .expectStatus(200)
+    .expectJsonLike({
+      "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+      }
+    });
+});
+
+Given('I fetch all users', async () => {
+  await spec()
+    .get('/api/users')
     .expectStatus(200)
     .expectJsonLike({
       "data": {
