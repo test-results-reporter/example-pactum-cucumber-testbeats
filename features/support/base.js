@@ -11,7 +11,7 @@ let req = {};
 let res = {};
 
 AfterStep(function(ctx) {
-  this.attach(JSON.stringify({req, res}), { mediaType: 'application/json' });
+  this.attach(JSON.stringify({req, res}, null, 2), { mediaType: 'application/json' });
 });
 
 events.pactumEvents.on(events.EVENT_TYPES.AFTER_RESPONSE, (ctx) => {
